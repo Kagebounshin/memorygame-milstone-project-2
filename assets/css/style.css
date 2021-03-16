@@ -75,6 +75,12 @@ body {
     margin: 10px;
     display: inline-flex;
     border-radius: 3%;
+    transform: scale(1);
+}
+
+.cards:active {
+    transform: scale(.94);
+    transition: transform .1s;
 }
 
 /*---------------------------Background colors---------------------------------*/

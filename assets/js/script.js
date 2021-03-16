@@ -1,4 +1,4 @@
-
+/*
 $(document).ready(function() {
 
     $('.cards').click(function() {
@@ -11,4 +11,4 @@ $(document).ready(function() {
 
 });
 
-
+*/
