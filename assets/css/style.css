@@ -1,0 +1,76 @@
+.navbar {
+    clear: both;
+}
+
+.navbar-wrapper {
+    text-align: right;
+}
+
+.navbar-brand{
+    width: 20px;
+    height: 10px;
+    margin-bottom: 30px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-item {
+    font-size: 1.3em;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.nav-link:active:focus{
+    transition: 100ms ease-in;
+    transition: 100ms ease-out;    
+    margin-top: -1px;
+    font-weight: 600;
+}
+
+.gameboard-container {
+    background-color: #70a977;
+    min-height: 100vh;
+}
+
+.memorygame {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 1%;
+    z-index: 1;
+}
+
+.shadow {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 52%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 1%;
+}
+
+.cards {
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    margin: 10px;
+    display: inline-flex;
+    border-radius: 3%;
+}
+
+.bg-color-memorygame {
+    background-color: #fafafa;
+}
+
+.bg-color-shadow {
+    background-color: #000;
+}
