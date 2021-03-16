@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+body {
+    font-family: 'Fascinate', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow: auto;
+    
+}
+
+
+
+/*---------------------------Navbar---------------------------------*/
+
 .navbar {
-    clear: both;
+    display: block;
 }
 
 .navbar-wrapper {
@@ -10,34 +24,26 @@
     width: 20px;
     height: 10px;
     margin-bottom: 30px;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    color: #70a977;
+    
 }
 
 .navbar-toggler {
     border: none;
 }
 
-.nav-item {
-    font-size: 1.3em;
-}
-
-.nav-link:hover,
-.nav-link:active,
-.nav-link:focus,
-.nav-link:active:focus{
-    transition: 100ms ease-in;
-    transition: 100ms ease-out;    
-    margin-top: -1px;
-    font-weight: 600;
-}
+/*---------------------------Gameboard---------------------------------*/
 
 .gameboard-container {
-    background-color: #70a977;
     min-height: 100vh;
 }
 
 .memorygame {
-    width: 600px;
-    height: 600px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -45,6 +51,10 @@
     padding: 10px;
     border-radius: 1%;
     z-index: 1;
+    padding-right: 0px;
+    height: 600px;
+    width: 590px;
+    padding-left: 8px;
 }
 
 .shadow {
@@ -61,10 +71,16 @@
 .cards {
     width: 120px;
     height: 120px;
-    background-color: #000;
+    background-color: #b75353b8;
     margin: 10px;
     display: inline-flex;
     border-radius: 3%;
+}
+
+/*---------------------------Background colors---------------------------------*/
+
+.bg-color-gameboard {
+    background-color: #70a977;
 }
 
 .bg-color-memorygame {
@@ -72,5 +88,52 @@
 }
 
 .bg-color-shadow {
-    background-color: #000;
+    background-color: #0000001c;
+}
+
+/*---------------------------Media---------------------------------*/
+
+
+@media (max-width: 576px) { 
+    .memorygame {
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 1%;
+        z-index: 1;
+        width: 340px;
+        padding-right: 0px;
+        padding-left: 9px;
+        padding-top: 13px;
+    }
+    .shadow {
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        left: 52%;
+        top: 53%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 1%;
+    }
+
+    .cards {
+        width: 65px;
+        height: 65px;
+        margin: 6px;
+        display: inline-flex;
+        border-radius: 3%;
+    }
+
+    .navbar-brand {
+        font-size: .9rem ;
+    }
+
+}
+
+@media (min-width: 992px) {
+    
 }
